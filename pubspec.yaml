@@ -1,0 +1,110 @@
+name: niuiu_app
+description: The Niuiu App
+version: 2.0.3
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.2
+  color: ^3.0.0
+  fl_chart: ^0.63.0
+  flutter_spinkit: ^5.2.0
+#  bitsdojo_window: ^0.1.5
+  window_manager: ^0.3.7
+  flutter_window_close: ^1.0.0
+  iirjdart: ^0.1.0
+  device_info_plus: ^9.1.1
+  package_info_plus: ^4.2.0
+
+  ####################################
+  ########## dart_utilities ##########
+  ####################################
+  dart_extensions:
+    hosted: https://dart.cloudsmith.io/nyx/dart_utilities/
+    version: ^1.0.0
+  process_handler:
+    hosted: https://dart.cloudsmith.io/nyx/dart_utilities/
+    version: ^1.0.0
+  recase:
+    hosted: https://dart.cloudsmith.io/nyx/dart_utilities/
+    version: ^1.0.0
+  type_converter:
+    hosted: https://dart.cloudsmith.io/nyx/dart_utilities/
+    version: ^1.0.0
+  state_controller:
+    hosted: https://dart.cloudsmith.io/nyx/dart_utilities/
+    version: ^2.0.0
+
+  ####################################
+  ######### flutter_utilities ########
+  ####################################
+  audio:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.1.0
+  mvc:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.1.0
+  navigation:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.2.0
+  screen:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.1.0
+  theme:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^2.1.0
+  form_controller:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.0.0
+  state_consumer:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.1.0
+  auto_size_text: ^3.0.0
+
+  ####################################
+  ########### nyx_modules ############
+  ####################################
+  ban_communication:
+    hosted: https://dart.cloudsmith.io/nyx/nyx_modules/
+    version: ^1.2.0
+  device_driver:
+    hosted: https://dart.cloudsmith.io/nyx/nyx_modules/
+    version: ^1.1.0
+
+dev_dependencies:
+
+  ####################################
+  ########### Pub Packages ###########
+  ####################################
+  build_runner: ^2.1.4
+
+  ####################################
+  ######### flutter_utilities ########
+  ####################################
+  mvc_gen:
+    hosted: https://dart.cloudsmith.io/nyx/flutter_utilities/
+    version: ^1.2.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/devices/devices.txt
+    - assets/svgs/bed_frame.svg
+    - assets/svgs/niura_logo.svg
+    - assets/svgs/head_figure_left.svg
+    - assets/svgs/head_figure_right.svg
+    - assets/images/niura75333.png
+    - assets/icons/niura_logo_black.ico
+    - assets/icons/niura_logo_red.ico
+    - assets/icons/niura_logo_white.ico
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy-Regular.otf
+        - asset: assets/fonts/Gilroy-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Gilroy-Medium.otf
+          weight: 500

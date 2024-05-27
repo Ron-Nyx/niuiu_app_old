@@ -1,0 +1,88 @@
+targets:
+  $default: {}
+
+  # UI modules
+  ui_modules:
+    sources:
+      - lib/ui_modules/**/*_module.dart
+    builders:
+      mvc_gen|mvcBuilder: {}
+#
+#  # data object service
+#  data_object_service:
+#    sources:
+#      - lib/service_modules/data_objects_module/data_object_service.dart
+#    builders:
+#      data_object_gen|dataObjectFromContentBuilder:
+#        generate_for:
+#          - lib/service_modules/data_objects_module/data_object_service.dart
+#        options:
+#          data_objects_path: service_modules/data_objects_module/data_objects/
+#
+#      data_object_gen|dataObjectFromMapBuilder:
+#        generate_for:
+#          - lib/service_modules/data_objects_module/data_object_service.dart
+#        options:
+#          data_objects_path: service_modules/data_objects_module/data_objects/
+#
+#      data_object_gen|dataObjectFromFlatMapBuilder:
+#        generate_for:
+#          - lib/service_modules/data_objects_module/data_object_service.dart
+#        options:
+#          data_objects_path: service_modules/data_objects_module/data_objects/
+#
+#  # data objects
+#  data_objects:
+#    sources:
+#      - lib/service_modules/data_objects_module/data_objects/**/*_data_object.dart
+#    builders:
+#      class_serializer_gen|classSerializeBuilder:
+#        options:
+#          from_flat_map: True
+#
+#  # local database service
+#  local_database_service:
+#    sources:
+#      - lib/service_modules/local_database_module/local_database_service.dart
+#    builders:
+#      local_database_gen|entryFromObjectBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/local_database_service.dart
+#        options:
+#          data_objects_module_path: service_modules/data_objects_module/data_object.dart
+#          tables_path: service_modules/local_database_module/tables/
+#
+#      local_database_gen|entryFromMapBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/local_database_service.dart
+#        options:
+#          tables_path: service_modules/local_database_module/tables/
+#
+#      local_database_gen|entryFromFlatMapBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/local_database_service.dart
+#        options:
+#          tables_path: service_modules/local_database_module/tables/
+#
+#      local_database_gen|tablesListBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/local_database_service.dart
+#        options:
+#          tables_path: service_modules/local_database_module/tables/
+#
+#  # tables
+#  tables:
+#    sources:
+#      - lib/service_modules/local_database_module/tables/**/*_table.dart
+#    builders:
+#      class_serializer_gen|classSerializeBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/tables/**/*_table.dart
+#        options:
+#          from_flat_map: True
+#      local_database_gen|entryExtensionBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/tables/**/*_table.dart
+#      local_database_gen|tableExtensionBuilder:
+#        generate_for:
+#          - lib/service_modules/local_database_module/tables/**/*_table.dart
